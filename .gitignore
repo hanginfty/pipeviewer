@@ -1,0 +1,7 @@
+/target
+
+/.idea
+/.vscode
+
+# backup files
+**/*.rs.bk
