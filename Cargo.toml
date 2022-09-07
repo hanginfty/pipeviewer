@@ -9,3 +9,10 @@ edition = "2021"
 clap = "2.33.0"
 crossbeam = "0.7.3"
 crossterm = "0.14.2"
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = "abort"
